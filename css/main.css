@@ -491,3 +491,13 @@ footer {
 	align-items: center;
   }
   
+  .icon-container {
+    /* Stylizacja kontenera z ikoną */
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    /* Stylizacja ikony */
+    margin-right: 5px;
+}
