@@ -6,21 +6,16 @@ html{
     -ms-overflow-style:scrollbar
 }
 *,::after,::before{
-    box-sizing: initial;
+    max-width: 100%;
+    box-sizing: border-box;
 }
-
-* {
-  outline: 1px solid red;
-}
-
 
 html,body {
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
-    position: relative;
-    left: -80px; /* dostosuj wartość */
+	overflow-x: hidden; /* Ukrywa przewijanie poziome */
 }
 
 hr {
@@ -34,7 +29,7 @@ p {
 	padding: 0;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
 	font-family: 'PT Sans', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -42,6 +37,7 @@ h1,h2,h3 {
 
 .parallax {
     height: 100%;
+    width: 100%; /* Zmień z 80% na 100% */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,10 +71,12 @@ a:hover {
     padding-right: 19px;
     padding-left: 19px;
     font-size: 18px;
+    transition: all .2s ease-in;
 }
 
 #myBtn:hover {
     background-color: #2980b9;
+    transition: all .2s ease-in;
 }
 
 /* Navbar */
@@ -92,6 +90,10 @@ a:hover {
     font-weight: 700;
     text-transform: uppercase;
 	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
 }
 
 .topnav a {
@@ -102,6 +104,7 @@ a:hover {
     padding: 24px 26px;
     text-decoration: none;
     font-size: 17px;
+	transition: all .2s ease-in;
 }
 
 .topnav a:hover {
@@ -164,8 +167,50 @@ a:hover {
 	text-transform: uppercase;
 }
 
+#dc {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#dc h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#dc .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#dc .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#dc h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#dc p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
 #banner {
 	background-image: url("https://i.imgur.com/XL2PAd3.png");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+}
+
+#banner2 {
+	background-image: url("https://i.imgur.com/8P27W9N.png");
 	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
@@ -184,6 +229,19 @@ a:hover {
 }
 
 #banner h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner2 h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner2 h2 {
 	margin-top: 5px;
 	font-size: 20px;
 	color: white;
@@ -245,6 +303,50 @@ a:hover {
 	transition: all .2s ease-in;
 }
 
+#gamemodes {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#gamemodes h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#gamemodes h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#gamemodes p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#gamemodes .gray {
+    background-color: #ecf0f1;
+    padding: 0;
+    margin: 0; /* Usuń negatywne marginesy */
+}
+
+#gamemodes .mode {
+	margin: 15px;
+	text-align: left;
+	padding: 50px;
+	max-width: 1280px;
+}
+
+#gamemodes .mode-inv {
+	margin: 15px;
+	text-align: right;
+	padding: 50px;
+	max-width: 1280px
+}
+
 #info {
 	margin: 10px;
 	text-align: center;
@@ -286,6 +388,30 @@ a:hover {
 	transition: all .2s ease-in;
 }
 
+@media screen and (min-width: 800px) {
+	#gamemodes .img {
+		margin: 15px;
+		padding: 50px;
+		max-width: 1280px
+	}
+}
+
+@media screen and (max-width: 799px) {
+	#gamemodes .img {
+		padding: 50px 0px 50px 0px;
+	}
+}
+
+#gamemodes .fixed-width {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.voteblock a {
+	font-weight: 700;
+}
+
 
 footer {
 	background-color: #11171e;
@@ -298,6 +424,10 @@ footer {
 	float: none;
 	padding-top: 0x;
 	padding-bottom: 0px;
+	text-align: center;
+}
+
+.fotter-img {
 	text-align: center;
 }
 .footer-nav, .social {
@@ -327,6 +457,25 @@ footer {
 	margin-bottom: 40px;
   }
 
+.copyright-notice {
+	color: #30343a;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: default;
+}
+
+.copyright-notice:hover {
+	color: white;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+}
+
 @media screen and (min-width: 800px) {
 	.res-img {
 		width: 480px;
@@ -335,6 +484,17 @@ footer {
 
 @media screen and (max-width: 799px) {
 	.res-img {
+		width: 100%;	}
+}
+
+@media screen and (min-width: 800px) {
+	.res-img-sm {
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.res-img-sm {
 		width: 100%;	}
 }
 
@@ -381,6 +541,16 @@ button:hover {
 	margin: 0 20px;
 	font-size: 1.5em;
   }
+
+  #discordButton {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
   
   button:hover {
 	background-color: #180488;

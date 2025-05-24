@@ -49,9 +49,10 @@ html{
     display:flex;
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
-    margin-right:-15px;
-    margin-left:-15px
+    margin-right: -15;
+    margin-left: -15;
 }
+
 .no-gutters{
     margin-right:0;
     margin-left:0
