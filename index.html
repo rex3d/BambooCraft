@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+	<!-- Title -->
 	<title>BambooCraft</title>
-	<link rel="shortcut icon" href="01ae9e8f-b94f-447e-9dc3-55dc0173cd872.jpg" type="image/x-icon"> <!--Title icon-->
-
+	<!-- End Title -->
+	<!-- Title icon -->
+	<link rel="shortcut icon" href="01ae9e8f-b94f-447e-9dc3-55dc0173cd872.jpg" type="image/x-icon">
+    <!-- End Title icon -->
+	<!-- Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-
+    <!-- End Meta -->
 	<!-- Custom CSS for this template -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <!-- End Custom CSS for this template -->
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-
+    <!-- End Font -->
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
-
+    <!-- End Bootstrap -->
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
+    <!-- End Font Awesome -->
 </head>
 <body>
-
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
-	
 	<!-- Navbar -->
 	<div class="topnav" id="myTopnav">
 		<div class="max-width">
@@ -36,60 +38,60 @@
 					<img src="icons8-home-48.png" style="height: 1em;">
 					<span>Home</span>
 				</div>
-			</a>			
-			<a href="#about">
-				<div class="icon-container">
-				  <img src="about.svg" style="height: 1em;">
-				  <span>About</span>
-				</div>
 			</a>
 			<a href="https://discord.gg/DmczjTv4nj">
 				<div class="icon-container">
 					<img src="discord-mark-black.svg" style="height: 1em;">
 					<span>Discord</span>
 				</div>
-			</a>			
-			<a href="#gamemodes">
-				<div class="icon-container">
-				  <img src="icons8-server-48.png" style="height: 1em;">
-				  <span>Tryby</span>
-				</div>
 			</a>
-			<a href="administracja.html">
+			<a href="regulaminy.html">
 				<div class="icon-container">
-					<img src="icons8-staff-48.png" style="height: 1.3em;">
-					<span>Administracja</span>
+					<img src="icons8-paper-48.png" style="height: 1.3em;">
+					<span>Regulamin</span>
 				</div>
 			</a>
 			<a href="https://vishop.pl/shop/14322/">
 				<div class="icon-container">
 					<img src="icons8-shop-30.png" style="height: 1.3em;">
-					<span></span>
+					<span>Item Shop</span>
 				</div>
-			</a>			
+			</a>	
+			<a href="info.html">
+				<div class="icon-container">
+					<img src="icons8-paper-48.png" style="height: 1.3em;">
+					<span>Informacje</span>
+				</div>
+			</a>		
 		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 	</div>
 	<!-- End Navbar -->
-
-	<!-- Header (Banner) -->
+    <!-- Home -->
+	<!-- Home (Banner) -->
 	<header id="head" class="parallax">
-		<h1>BambooCraft</h1>
-		<h3>soon...</h3>
-		<h3>Wersja: 1.20.4+</h3>
+		<!-- End Home (Banner) -->
+		<h1>bamboocraft.pl™</h1>
+		<h3>IP: <span id="ipToCopy">bamboocraft.icsv.pl</span></h3>
+		<b><p  style="color: rgb(1, 1, 1); font-size: 120%;">Kliknij aby skopiować</p></b>
+		<script>
+		  const ipElement = document.getElementById('ipToCopy');
+		  ipElement.addEventListener('click', () => {
+			navigator.clipboard.writeText(ipElement.textContent);
+			alert('Adres IP skopiowany do schowka!');
+		  });
+		</script>
 	</header>
-	<!-- End Header -->
-
-	<!-- About Section -->
+	<!-- End Home -->
+	<!-- About -->
 	<section id="about">
 		<h1>Nasz Serwer</h1>
-		<p>O naszym serwerze</p>
 		<hr>
-		<!-- First row of features -->
+		<!-- First About-->
 		<div class="row features">
 			<div class="col">
 				<i class="fab fa-cloudscale feature"></i>
-				<h2>Masz serwer jest naprawde szybki (przy max 5 osobach)</h2>
+				<h2>Masz serwer jest naprawde szybki</h2>
 				<p>Nasze serwery są tak niesamowicie szybkie, że nawet Sonic nie nadąża, niesamowite, prawda?!</p>
 			</div>
 			<div class="col">
@@ -98,94 +100,123 @@
 				<p>Mamy miłe community i pomocną Administrację</p>
 			</div>
 		</div>
-		<!-- End first row -->
-
-		<!-- Second row of features -->
+		<!-- End First About-->
+		<!-- Second About -->
 		<div class="row features">
 			<div class="col">
 				<i class="far fa-calendar-alt feature"></i>
 				<h2>Eventy</h2>
-				<p>Ciekawe eventy które się każdemu napewno spodobają</p>
+				<p>Ciekawe eventy które się każdemu napewno spodobają!</p>
 			</div>
 			<div class="col">
 				<i class="fas fa-code-branch feature"></i>
-				<h2>Customowe Pluginy (Prawie)</h2>
-				<p>Posiadamy naprawde fajne pluginy które urozmaicają nasz serwer</p>
+				<h2>Pluginy</h2>
+				<p>Na naszym serwerze znajdziesz pluginy które urozmaicą twoją rozgrywke u nas!</p>
 			</div>
 		</div>
-		<!-- End second row -->
-
-		<!-- Note: You can add as many feature rows as you like. -->
 	</section>
-	<!-- End about section -->
-
-	<!-- Banner 1 -->
-	<section id="banner" class="parallax">
-		<h1>Na co jeszcze czekasz?</h1>
-		<h2>Zagraj już teraz <i><h3>soon</h3></i></h2>
-		<h3>Wersja: 1.20.4+</h3>
-	</section>
-	<!-- End Banner 1 -->
-
-	<!-- Gamemodes Section -->
-	<section id="gamemodes">
+	<!-- End Second About-->
+	<!-- End About -->
+	<!-- Gamemodes -->
+	<section id="banner3" class="parallax">
 		<h1>Tryby</h1>
-		<p>Na naszym serwerze znajdziesz</p>
+		<b><p  style="color: white; font-size: 120%;">Na naszym serwerze znajdziesz</p></b>
 		<hr>
-		<!-- First Gamemode -->
 		<div class="row fixed-width">
 			<div class="col-md mode">
 				<h2>SURVIVAL + DZIAŁKI</h2>
-				<p>Serwery Minecraft Survival + Działki to doskonała opcja dla wszystkich miłośników Minecrafta, 
-				    którzy chcą przeżyć niezapomnianą przygodę w towarzystwie innych graczy. Jeśli szukasz miejsca, 
-				    gdzie możesz dać upust swojej kreatywności i budować niesamowite rzeczy, to serwery tego typu są właśnie dla Ciebie.</p>
+				<img class="res-img" src="sdnormal.jfif">
 			</div>
-			<!-- Gamemode Image -->
-			<div class="col-md img">
-				<img class="res-img" src="https://via.placeholder.com/1920x1080">
+			<div class="col-md mode">
+				<h2>soon...</h2>
+				<img class="res-img" src="boxpvpnormal.jpg">
 			</div>
-			<!-- End Gamemode Image -->
+			<div class="col-md mode">
+				<h2>soon...</h2>
+				<img class="res-img" src="oneblocknormal.jfif">
+			</div>
 		</div>
-		<!-- End Third Gamemode -->
 	</section>
-	<!-- End Gamemode Section -->
-
-	<!-- End Staff Section -->
-
-	<!-- Footer -->
-	<footer>
-		<div class="footer">
-			<div class="copyright-notice">
-				<!-- !! Replace this with your own domain !! -->
-				<p>bamboocraft.github.io / bomboocraft.icsv.pl &copy; | Wsztkie prawa zastrzeżone</p>
-				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
-				<p>Stworzone przez <a target="_blank" href="https://discord.gg/qqkaNNdJSZ">makkowskyy.</a>.</font></p>
+	<!-- End Gamemodes -->
+	<!-- Admin -->
+    <section id="staff">
+		<h1>Administracja</h1>
+		<hr>
+		<div class="row stafflist">
+			<div class="col-md staffblock">
+				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/1229658002798149707/5f55d8277e31467a1a85bb2e2307cb30.png?size=2048">
+				<h2>makki</h2>
+				<p>CEO</p>
+			</div>
+			<div class="col-md staffblock">
+				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/1223995869309829190/930de30f88eadf0e2f1ffb60d48dd698.png?size=2048">
+				<h2>Bart</h2>
+				<p>CO-CEO</p>
+			</div>
+			<div class="col-md staffblock">
+				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/879301652941778944/a554bb6648743a462634de865940074c.png?size=2048">
+				<h2>kaktus</h2>
+				<p>Head Admin</p>
 			</div>
 		</div>
-	</footer>
+		<div class="row stafflist">
+			<div class="col-md staffblock">
+				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/827979187448709230/d74ed044e900e2b25b3df62b52f5f96f.png?size=2048">
+				<h2>🔪 czxrny.</h2>
+				<p>Mod</p>
+			</div>
+			<div class="col-md staffblock">
+				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/810344638711332904/2df767d2159cbeab5cd8af245ee68fac.png?size=2048">
+				<h2>x_kacpi_x</h2>
+				<p>Mod</p>
+			</div>
+		</div>
+	</section>
+	<!-- End Admin -->
+    <!-- Fotter -->
+	<footer>
+		<section id="banner" class="parallax">
+		<div class="footer">
+            <ul class="footer-nav">
+                <li style="font-size: 150%;">Linki</li>
+                <li><a href="info.html" style="color: white; font-size: 120%;">Regulamin</a></li>
+                <li><a href="https://vishop.pl/shop/14322/server/13637" style="color: white; font-size: 120%;">Itemshop</a></li>
+                <li><a href="info.html" style="color: white; font-size: 120%;">Informacje</a></li>
+                <li><a href="info.html" style="color: white; font-size: 120%;">Regulamin</a></li>
+            </ul>
+			<button onclick="window.location.href='https://discord.gg/DmczjTv4nj'">Nasz Discord</button>
+            <ul class="social">
+                <li style="font-size: 150%;">SocialMedia</li>
+                <li><a href="https://www.tiktok.com" style="color: white; font-size: 120%;">TikTok</a></li>
+                <li><a href="https://www.youtube.com" style="color: white; font-size: 120%;">YouTube</a></li>
+                <li><a href="https://www.instagram.com" style="color: white; font-size: 120%;">Instagram</a></li>
+                <li><a href="https://discord.gg/DmczjTv4nj" style="color: white; font-size: 120%;">Discord</a></li> 
+            </ul>
+			<div class="footer-content">
+		</div>
+		<p>bomboocraft.pl &copy; | Nie ma żadnego powiązania z Mojang lub Microsoft</p>
+            <p>Stworzone przez <a href="https://discord.gg/DmczjTv4nj" style="color: white;"><b>makkowskyy</b></a></p>
+        </div>
+	</section>
+    </footer>
 	<!-- End Footer -->
-
-	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
+	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
 		  // Add smooth scrolling to all links
 		  $("a").on('click', function(event) {
-
 		    // Make sure this.hash has a value before overriding default behavior
 		    if (this.hash !== "") {
 		      // Prevent default anchor click behavior
 		      event.preventDefault();
-
 		      // Store hash
 		      var hash = this.hash;
-
 		      // Using jQuery's animate() method to add smooth page scroll
 		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 		      $('html, body').animate({
 		        scrollTop: $(hash).offset().top
 		      }, 100, function(){
-		   
 		        // Add hash (#) to URL when done scrolling (default click behavior)
 		        window.location.hash = hash;
 		      });
@@ -194,7 +225,6 @@
 		});
 	</script>
 	<!-- End Smooth Scrolling Script -->
-
 	<script>
 		function myFunction() {
 		    var x = document.getElementById("myTopnav");
@@ -205,11 +235,9 @@
 		    }
 		}
 	</script>
-
 	<script>
 	// When the user scrolls down 20px from the top of the document, show the button
 	window.onscroll = function() {scrollFunction()};
-
 	function scrollFunction() {
 	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 	        document.getElementById("myBtn").style.display = "block";
@@ -217,13 +245,11 @@
 	        document.getElementById("myBtn").style.display = "none";
 	    }
 	}
-
 	// When the user clicks on the button, scroll to the top of the document
 	function topFunction() {
 	    document.body.scrollTop = 0;
 	    document.documentElement.scrollTop = 0;
 	}
 	</script>
-
 </body>
 </html>

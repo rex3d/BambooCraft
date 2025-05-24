@@ -86,6 +86,7 @@ a:hover {
     transition: all .2s ease-in;
     font-weight: 700;
     text-transform: uppercase;
+	text-align: center;
 }
 
 .topnav a {
@@ -371,6 +372,47 @@ a:hover {
 	max-width: 1280px
 }
 
+#info {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#info h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#info h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#info p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#info .stafflist {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#info .staffblock {
+	transform: none;
+	transition: all .2s ease-in;
+	margin-bottom: 5px;
+}
+
+#info .staffblock:hover {
+	transform: scale(1.1,1.1);
+	transition: all .2s ease-in;
+}
+
 @media screen and (min-width: 800px) {
 	#gamemodes .img {
 		margin: 15px;
@@ -388,42 +430,7 @@ a:hover {
 #gamemodes .fixed-width {
 	max-width: 1280px;
 	margin: 0 auto;
-}
-
-#vote {
-	margin: 10px;
 	text-align: center;
-	padding-top: 66px;
-	padding-bottom: 66px;
-}
-
-#vote h1 {
-	font-size: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-top: 15px;
-}
-
-#vote h2 {
-	margin-top: 5px;
-	font-size: 20px;
-}
-
-#vote p {
-	margin-top: 3px;
-	font-size: 18px;
-}
-
-#vote .votelist {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding-top: 66px;
-	padding-bottom: 66px;
-}
-
-#vote .voteblock {
-	transform: none;
-	transition: all .2s ease-in;
 }
 
 .voteblock a {
@@ -440,9 +447,40 @@ footer {
 	max-width: 1280px;
 	margin: 0 auto;
 	float: none;
-	padding-top: 66px;
-	padding-bottom: 66px;
+	padding-top: 0x;
+	padding-bottom: 0px;
+	text-align: center;
 }
+
+.fotter-img {
+	text-align: center;
+}
+.footer-nav, .social {
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 100px;
+	list-style: none;
+	padding: 100;
+	text-align: center; /* Nowy dodatek: wyśrodkowuje elementy w liście */
+  }
+  
+  .footer-nav li, .social li {
+	font-weight: bold;
+	display: block; /* Zmiana na block, aby każdy link był w nowej linii */
+	margin-bottom: 5px; /* Odstęp między linkami */
+  }
+  
+  /* Nowy styl dla napisów */
+  .footer-nav li:first-child, .social li:first-child {
+	font-weight: bold;
+	margin-bottom: 10px; /* Większy odstęp pod napisami */
+  }
+  
+
+  .footer-content {
+	margin-bottom: 40px;
+  }
 
 .copyright-notice {
 	color: #30343a;
@@ -500,4 +538,197 @@ footer {
 .icon-container img {
     /* Stylizacja ikony */
     margin-right: 5px;
+}
+
+/* Dodatkowe style dla responsywności i estetyki */
+button:hover {
+		background-color: rgb(21, 0, 255);
+  }
+
+  button {
+	/* ... pozostały kod CSS ... */
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  #ipToCopy {
+	cursor: pointer; /* Zmienia kursor na wskaźnik, sugerując, że element jest klikalny */
+  }
+
+
+  button {
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	margin: 0 20px;
+	font-size: 1.5em;
+  }
+
+  #discordButton {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+  
+  button:hover {
+	background-color: #180488;
+  }
+
+#regulaminmc {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#regulaminmc h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#regulaminmc .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#regulaminmc .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#regulaminmc h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#regulaminmc p {
+	margin-top: 3px;
+	font-size: 18px;
+	text-align: left;
+}
+
+#taryfikator {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#taryfikator h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#taryfikator .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#taryfikator .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#taryfikator h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#taryfikator p {
+	margin-top: 3px;
+	font-size: 18px;
+	text-align: left;
+}
+
+#itemshopinfo {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#itemshopinfo h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#itemshopinfo .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#itemshopinfo .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#itemshopinfo h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#itemshopinfo p {
+	margin-top: 3px;
+	font-size: 18px;
+	text-align: left;
+}
+
+#regulamindc {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#regulamindc h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#regulamindc .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#regulamindc .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#regulamindc h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#regulamindc p {
+	margin-top: 3px;
+	font-size: 18px;
+	text-align: left;
 }
