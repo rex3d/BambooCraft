@@ -1,213 +1,127 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-	<!-- Title -->
-	<title>BambooCraft</title>
-	<!-- End Title -->
-	<!-- Title icon -->
-	<link rel="shortcut icon" href="01ae9e8f-b94f-447e-9dc3-55dc0173cd872.jpg" type="image/x-icon">
-    <!-- End Title icon -->
-	<!-- Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-    <!-- End Meta -->
-	<!-- Custom CSS for this template -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- End Custom CSS for this template -->
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <!-- End Font -->
-	<!-- Bootstrap -->
-	 <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
-     <script src="js/bootstrap/bootstrap.min.js"></script>
-
-    <!-- End Bootstrap -->
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <!-- End Font Awesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BambooCraft</title>
+  <link rel="shortcut icon" href="01ae9e8f-b94f-447e-9dc3-55dc0173cd872.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Na górę!"><i class="fas fa-arrow-up"></i></button> 
-	<!-- Navbar -->
-	<div class="topnav" id="myTopnav">
-		<div class="max-width">
-			<a href="#head">
-				<div class="icon-container">
-					<img src="photo/icons8-home-48.png" style="height: 1em;">
-					<span>Home</span>
-				</div>
-			</a>
-			<a href="https://discord.gg/DmczjTv4nj">
-				<div class="icon-container">
-					<img src="photo/discord-mark-black.svg" style="height: 1em;">
-					<span>Discord</span>
-				</div>
-			</a>
-			<a href="regulaminy.html">
-				<div class="icon-container">
-					<img src="photo/icons8-paper-48.png" style="height: 1.3em;">
-					<span>Regulamin</span>
-				</div>
-			</a>
-			<a href="https://vishop.pl/shop/14322/">
-				<div class="icon-container">
-					<img src="photo/icons8-shop-30.png" style="height: 1.3em;">
-					<span>Item Shop</span>
-				</div>
-			</a>	
-		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>
-	</div>
-	<!-- End Navbar -->
-    <!-- Home -->
-	<!-- Home (Banner) -->
-	<header id="head" class="parallax">
-		<!-- End Home (Banner) -->
-		<h1>bamboocraft.pl™</h1>
-		<h3>IP: <span id="ipToCopy">bamboocraft.icsv.pl</span></h3>
-		<b><p  style="color: rgb(1, 1, 1); font-size: 120%;">Kliknij aby skopiować</p></b>
-		<script>
-		  const ipElement = document.getElementById('ipToCopy');
-		  ipElement.addEventListener('click', () => {
-			navigator.clipboard.writeText(ipElement.textContent);
-			alert('Adres IP skopiowany do schowka!');
-		  });
-		</script>
-	</header>
-	<!-- End Home -->
-	<!-- Gamemodes -->
-	<section id="banner3" class="parallax">
-		<h1>Tryby</h1>
-		<b><p  style="color: white; font-size: 120%;">Na naszym serwerze znajdziesz</p></b>
-		<hr>
-		<div class="row fixed-width">
-			<div class="col-md mode">
-				<h2>SURVIVAL + DZIAŁKI</h2>
-				<img class="res-img" src="photo/sdnormal.jfif">
-			</div>
-			<div class="col-md mode">
-				<h2>soon...</h2>
-				<img class="res-img" src="photo/boxpvpnormal.jpg">
-			</div>
-		</div>
-	</section>
-	<!-- End Gamemodes -->
-	<!-- Admin -->
-    <section id="staff">
-		<h1>Administracja</h1>
-		<hr>
-		<div class="row stafflist">
-			<div class="col-md staffblock">
-				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/1229658002798149707/5f55d8277e31467a1a85bb2e2307cb30.png?size=2048">
-				<h2>makki</h2>
-				<p>CEO</p>
-			</div>
-			<div class="col-md staffblock">
-				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/1223995869309829190/930de30f88eadf0e2f1ffb60d48dd698.png?size=2048">
-				<h2>Bart</h2>
-				<p>CO-CEO</p>
-			</div>
-			<div class="col-md staffblock">
-				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/879301652941778944/a554bb6648743a462634de865940074c.png?size=2048">
-				<h2></h2>
-				<p>Head Admin</p>
-			</div>
-		</div>
-		<div class="row stafflist">
-			<div class="col-md staffblock">
-				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/827979187448709230/d74ed044e900e2b25b3df62b52f5f96f.png?size=2048">
-				<h2></h2>
-				<p>Mod</p>
-			</div>
-			<div class="col-md staffblock">
-				<img width="100px;", height="100px;" src="https://cdn.discordapp.com/avatars/810344638711332904/2df767d2159cbeab5cd8af245ee68fac.png?size=2048">
-				<h2></h2>
-				<p>Mod</p>
-			</div>
-		</div>
-	</section>
-	<!-- End Admin -->
-    <!-- Fotter -->
-	<footer>
-		<section id="banner" class="parallax">
-		<div class="footer">
-            <ul class="footer-nav">
-                <li style="font-size: 150%;">Linki</li>
-                <li><a href="info.html" style="color: white; font-size: 120%;">Regulamin</a></li>
-                <li><a href="https://vishop.pl/shop/14322/server/13637" style="color: white; font-size: 120%;">Itemshop</a></li>
-            </ul>
-			<button onclick="window.location.href='https://discord.gg/DmczjTv4nj'">Nasz Discord</button>
-            <ul class="social">
-                <li style="font-size: 150%;">SocialMedia</li>
-                <li><a href="https://www.tiktok.com" style="color: white; font-size: 120%;">TikTok</a></li>
-                <li><a href="https://discord.gg/DmczjTv4nj" style="color: white; font-size: 120%;">Discord</a></li> 
-            </ul>
-			<div class="footer-content">
-		</div>
-		<p>bomboocraft.pl &copy; | Nie ma żadnego powiązania z Mojang lub Microsoft</p>
-            <p>Stworzone przez <a href="https://discord.gg/DmczjTv4nj" style="color: white;"><b>makkowskyy</b></a></p>
-        </div>
-	</section>
-    </footer>
-	<!-- End Footer -->
-	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		  // Add smooth scrolling to all links
-		  $("a").on('click', function(event) {
-		    // Make sure this.hash has a value before overriding default behavior
-		    if (this.hash !== "") {
-		      // Prevent default anchor click behavior
-		      event.preventDefault();
-		      // Store hash
-		      var hash = this.hash;
-		      // Using jQuery's animate() method to add smooth page scroll
-		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 100, function(){
-		        // Add hash (#) to URL when done scrolling (default click behavior)
-		        window.location.hash = hash;
-		      });
-		    } // End if
-		  });
-		});
-	</script>
-	<!-- End Smooth Scrolling Script -->
-	<script>
-		function myFunction() {
-		    var x = document.getElementById("myTopnav");
-		    if (x.className === "topnav") {
-		        x.className += " responsive";
-		    } else {
-		        x.className = "topnav";
-		    }
-		}
-	</script>
-	<script>
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-	        document.getElementById("myBtn").style.display = "block";
-	    } else {
-	        document.getElementById("myBtn").style.display = "none";
-	    }
-	}
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-	    document.body.scrollTop = 0;
-	    document.documentElement.scrollTop = 0;
-	}
-	</script>
-	<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  x.classList.toggle("responsive");
-}
-</script>
+  <button onclick="topFunction()" id="myBtn" title="Na górę!"><i class="fas fa-arrow-up"></i></button>
 
+  <!-- Navbar -->
+  <nav class="topnav" id="myTopnav">
+  <div class="max-width">
+    <a href="#head" class="icon-container">
+      <img src="photo/icons8-home-48.png" alt="Home" />
+      <span>Home</span>
+    </a>
+    <a href="https://discord.gg/DmczjTv4nj" class="icon-container">
+      <img src="photo/discord-mark-black.svg" alt="Discord" />
+      <span>Discord</span>
+    </a>
+    <a href="https://vishop.pl/shop/14322/" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>Item Shop</span>
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
+</nav>
+
+
+  <!-- Header / Banner -->
+  <header id="head" class="parallax">
+  <h1>bamboocraft.pl™</h1>
+  <h3>IP: <span id="ipToCopy" title="Kliknij, aby skopiować IP">bamboocraft.icsv.pl</span></h3>
+  <p class="click-info">Kliknij aby skopiować</p>
+</header>
+
+
+  <!-- Tryby -->
+  <section id="gamemodes">
+  <h1>Tryby</h1>
+  <p class="subtitle">Na naszym serwerze znajdziesz</p>
+  <hr>
+  <div class="gamemodes-container">
+    <div class="mode">
+      <img src="photo/sdnormal.jfif" alt="Survival + Działki">
+      <h2>Survival + Działki</h2>
+      <p>Klasyczny survival z działkami – buduj, handluj, przeżyj.</p>
+    </div>
+    <div class="mode">
+      <img src="photo/boxpvpnormal.jpg" alt="Coming Soon">
+      <h2>Wkrótce...</h2>
+      <p>Nowy tryb w przygotowaniu – bądź czujny!</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Administracja -->
+<section id="staff">
+  <h1>Administracja</h1>
+  <div class="stafflist">
+    <div class="staffblock">
+      <img src="https://cdn.discordapp.com/avatars/1229658002798149707/5f55d8277e31467a1a85bb2e2307cb30.png?size=2048" alt="makki">
+      <h2>makki</h2>
+      <p>CEO</p>
+    </div>
+    <div class="staffblock">
+      <img src="https://cdn.discordapp.com/avatars/1223995869309829190/930de30f88eadf0e2f1ffb60d48dd698.png?size=2048" alt="Bart">
+      <h2>Bart</h2>
+      <p>CO-CEO</p>
+    </div>
+    <div class="staffblock">
+      <img src="https://cdn.discordapp.com/avatars/879301652941778944/a554bb6648743a462634de865940074c.png?size=2048" alt="Head Admin">
+      <h2>-</h2>
+      <p>Head Admin</p>
+    </div>
+    <div class="staffblock">
+      <img src="https://cdn.discordapp.com/avatars/827979187448709230/d74ed044e900e2b25b3df62b52f5f96f.png?size=2048" alt="Mod">
+      <h2>-</h2>
+      <p>Mod</p>
+    </div>
+    <div class="staffblock">
+      <img src="https://cdn.discordapp.com/avatars/810344638711332904/2df767d2159cbeab5cd8af245ee68fac.png?size=2048" alt="Mod">
+      <h2>-</h2>
+      <p>Mod</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <!-- FONT AWESOME (dodaj do <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer class="parallax">
+  <div class="footer">
+    <ul class="footer-nav">
+      <li class="footer-title">Linki</li>
+      <li><a href="info.html">Regulamin</a></li>
+      <li><a href="https://vishop.pl/shop/14322/server/13637">Itemshop</a></li>
+    </ul>
+
+    <button class="discord-btn" onclick="window.location.href='https://discord.gg/DmczjTv4nj'">
+      <i class="fab fa-discord"></i> Nasz Discord
+    </button>
+
+    <ul class="social">
+      <li class="footer-title">SocialMedia</li>
+      <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a></li>
+      <li><a href="https://discord.gg/DmczjTv4nj"><i class="fab fa-discord"></i> Discord</a></li>
+    </ul>
+
+    <p>bomboocraft.pl &copy; | Nie powiązany z Mojang/Microsoft</p>
+    <p>Stworzone przez <a href="https://discord.gg/DmczjTv4nj"><b>makkowskyy</b></a></p>
+    <p>Powered by <span class="power">Rex3D Engine™</span></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
