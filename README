@@ -1,0 +1,46 @@
+1. Responsywne menu z animacjami
+Niech ten hamburger menu na mobilkach się animuje — przekręca w "X", a menu zjeżdża z góry, a nie tylko pokazuje się na chama.
+
+Możesz użyć prostego CSS transition i transform.
+
+2. Sticky navbar z efektem przezroczystości
+Kiedy scrollujesz, navbar niech się trochę przeźroczystym robi, albo zmienia kolor na ciemniejszy — spoko efekt, a nie jebane wkurwienie.
+
+W JS na scroll event.
+
+3. Scrollspy — podświetlanie aktualnej sekcji
+Jak klikniesz w "Home" albo inną zakładkę, podczas scrollowania podświetla się aktualny dział.
+
+Mega wygodne dla użytkownika, wkurwia brak tego na wielu stronach.
+
+4. Dark mode
+Kurwa, dark mode to już standard. Jeden przycisk, który zmienia kolory na ciemne — zmęczenie oczu mniejsze, wygląd lepszy.
+
+Możesz to zrobić czystym CSS i trochę JS.
+
+5. Tooltipy na ikonach
+Jak najedziesz na ikonkę (Discord, Shop), niech ci wyświetli się chujowy tooltip z opisem — user friendly jak chuj.
+
+Proste CSS albo mały pluginik.
+
+6. Lazy loading obrazków
+Żeby strona się szybciej ładowała, a obrazki wczytywały się dopiero jak scrollujesz do nich.
+
+7. Animacje przy hover i kliknięciu
+Nie jakieś jebane migotanie, tylko subtelne efekty — np. powiększenie ikonki albo delikatne przesunięcie tekstu.
+
+8. Kontakt / Formularz zgłoszeniowy
+Na dole albo na osobnej stronie, żeby ludzie mogli jebnąć ci maila bez kombinowania.
+
+9. Favicon
+Kurwa, bez favicon strona wygląda jak niedorobiona. Wrzucik ikonę, choćby z tym twoim logo.
+
+10. Optymalizacja pod SEO i meta tagi
+Opis strony, tytuł, social media meta, żeby Google cię nie zjebali.
+
+11. Social media share buttons
+Żeby jebnąć twoją stronę na fejsa, twittera itp. prostym kliknięciem.
+
+12. Stopka z podstawowymi info
+Prawa autorskie, linki, kontakt, może jakieś szybkie linki do regulaminu albo polityki prywatności.
+

@@ -603,3 +603,94 @@ footer p a:hover {
     max-width: 300px;
   }
 }
+
+/* Responsywność dla bardzo małych ekranów */
+@media (max-width: 500px) {
+  html, body {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  #head {
+    min-height: 280px;
+    padding: 60px 8px;
+  }
+  #head h1 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  #head h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+  }
+  #head #ipToCopy {
+    font-size: 0.95rem;
+    padding: 4px 8px;
+  }
+
+  #gamemodes {
+    padding: 30px 5px;
+  }
+  .gamemodes-container, #gamemodes .row {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+  .mode, #gamemodes .mode {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  #staff {
+    padding: 30px 5px;
+  }
+  .stafflist {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .staffblock {
+    width: 100%;
+    padding: 12px;
+  }
+
+  footer {
+    padding: 20px 5px;
+  }
+  .footer-nav, .social {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .discord-btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.95rem;
+  }
+}
+
+/* Poprawka nawigacji na telefonach */
+@media (max-width: 800px) {
+  .topnav {
+    flex-direction: row; /* Ustawienie elementów w kolumnie */
+    align-items: center; /* Wyśrodkowanie elementów */
+    padding: 8px 5px;
+  }
+  .topnav .max-width {
+    flex-direction: row; /* Ustawienie elementów w kolumnie */
+    align-items: center; /* Wyśrodkowanie elementów */
+    padding: 8px 5px;
+    gap: 10px; /* Większy odstęp między elementami */
+  }
+  .topnav a.icon-container {
+    width: auto; /* Dopasowanie szerokości do zawartości */
+    padding: 10px 0;
+    font-size: 1rem;
+    justify-content: center; /* Wyśrodkowanie tekstu i ikon */
+  }
+  .topnav a.icon {
+    display: block;
+    align-self: center; /* Wyśrodkowanie ikony */
+    margin: 5px 0;
+  }
+}
