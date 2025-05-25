@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktualności - BambooCraft</title>
+    <link rel="shortcut icon" href="01ae9e8f-b94f-447e-9dc3-55dc0173cd872.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" crossorigin="anonymous">
+    <style>
+        .category-filter {display: flex;justify-content: center;margin: 20px 0;}
+        .category-btn {margin: 0 5px;padding: 10px 20px;border: none;background: #e0e0e0;cursor: pointer;border-radius: 20px;font-size: 1rem;transition: all 0.3s;}
+        .category-btn.active {background: #7bc043;color: #fff;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+        .category-btn:hover {background: #55a630;color: #fff;}
+        .news-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 20px;padding: 20px;}
+        .news-item {background: #fff;border-radius: 10px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);padding: 20px;transition: transform 0.3s, box-shadow 0.3s;}
+        .news-item:hover {transform: translateY(-5px);box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);}
+        .news-category {font-size: 0.9rem;color: #7bc043;font-weight: bold;margin-bottom: 10px;}
+        .news-tags {margin-top: 10px;}
+        .news-tag {display: inline-block;background: #f1f1f1;color: #333;border-radius: 20px;padding: 5px 10px;font-size: 0.8rem;margin-right: 5px;}
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Na górę!"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Navbar -->
+  <nav class="topnav" id="myTopnav">
+  <div class="max-width">
+    <a href="news.html" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>AKTUALNOŚCI</span>
+    </a>
+    <a href="docs.html" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>REGULAMIN</span>
+    </a>
+    <a href="https://discord.gg/DmczjTv4nj" class="icon-container">
+      <img src="photo/discord-mark-black.svg" alt="Discord" />
+      <span>DISCORD</span>
+    </a>
+    <a href="https://vishop.pl/shop/14322/" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>ITEM SHOP</span>
+    </a>
+  </div>
+</nav>
+
+    <!-- Header / Banner -->
+    <header id="head" class="parallax">
+        <h1>Aktualności</h1>
+    </header>
+
+    <!-- News Section -->
+    <section id="news">
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">Wszystkie</button>
+            <button class="category-btn" data-category="ogloszenia">Ogłoszenia</button>
+            <button class="category-btn" data-category="aktualizacje">Aktualizacje</button>
+            <button class="category-btn" data-category="eventy">Eventy</button>
+        </div>
+        <div class="news-container">
+            <div class="news-item" data-category="ogloszenia">
+                <span class="news-category">Ogłoszenia</span>
+                <h2>Nowy tryb gry już wkrótce!</h2>
+                <p>Przygotowujemy dla Was nowy tryb gry. Szczegóły wkrótce!</p>
+                <div class="news-tags">
+                    <span class="news-tag">nowość</span>
+                    <span class="news-tag">tryb gry</span>
+                </div>
+                <p class="date">25 maja 2025</p>
+            </div>
+            <div class="news-item" data-category="aktualizacje">
+                <span class="news-category">Aktualizacje</span>
+                <h2>Aktualizacja serwera</h2>
+                <p>Wprowadziliśmy poprawki do systemu działek oraz nowe funkcje w sklepie.</p>
+                <div class="news-tags">
+                    <span class="news-tag">update</span>
+                    <span class="news-tag">sklep</span>
+                </div>
+                <p class="date">20 maja 2025</p>
+            </div>
+            <div class="news-item" data-category="eventy">
+                <span class="news-category">Eventy</span>
+                <h2>Letni event startuje!</h2>
+                <p>Już niedługo startuje letni event z nagrodami dla aktywnych graczy!</p>
+                <div class="news-tags">
+                    <span class="news-tag">event</span>
+                    <span class="news-tag">lato</span>
+                </div>
+                <p class="date">15 maja 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer class="parallax">
+  <div class="footer">
+    <ul class="footer-nav">
+      <li class="footer-title">Linki</li>
+      <li><a href="info.html">Regulamin</a></li>
+      <li><a href="https://vishop.pl/shop/14322/server/13637">Itemshop</a></li>
+    </ul>
+
+    <button class="discord-btn" onclick="window.location.href='https://discord.gg/DmczjTv4nj'">
+      <i class="fab fa-discord"></i> Nasz Discord
+    </button>
+
+    <ul class="social">
+      <li class="footer-title">SocialMedia</li>
+      <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a></li>
+      <li><a href="https://discord.gg/DmczjTv4nj"><i class="fab fa-discord"></i> Discord</a></li>
+    </ul>
+
+    <p>bomboocraft.pl &copy; | Nie powiązany z Mojang/Microsoft</p>
+    <p>Stworzone przez <a href="https://discord.gg/DmczjTv4nj"><b>makkowskyy</b></a></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+    <script>
+        // Prosty filtr kategorii
+        $('.category-btn').click(function() {
+            var cat = $(this).data('category');
+            $('.category-btn').removeClass('active');
+            $(this).addClass('active');
+            if (cat === 'all') {
+                $('.news-item').fadeIn();
+            } else {
+                $('.news-item').hide();
+                $('.news-item[data-category="' + cat + '"]').fadeIn();
+            }
+        });
+
+        // Scroll to top button
+        function topFunction() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        }
+    </script>
+</body>
+</html>

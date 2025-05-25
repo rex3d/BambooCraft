@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumenty - BambooCraft</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" crossorigin="anonymous">
+    <style>
+        .docs-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .docs-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .docs-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .docs-header p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .docs-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .doc-item {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .doc-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .doc-item i {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .doc-item h2 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .doc-item p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .doc-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .doc-item a:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+      <nav class="topnav" id="myTopnav">
+  <div class="max-width">
+    <a href="news.html" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>AKTUALNOŚCI</span>
+    </a>
+    <a href="docs.html" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>REGULAMIN</span>
+    </a>
+    <a href="https://discord.gg/DmczjTv4nj" class="icon-container">
+      <img src="photo/discord-mark-black.svg" alt="Discord" />
+      <span>DISCORD</span>
+    </a>
+    <a href="https://vishop.pl/shop/14322/" class="icon-container">
+      <img src="photo/icons8-shop-30.png" alt="Shop" />
+      <span>ITEM SHOP</span>
+    </a>
+  </div>
+</nav><!-- Navbar -->
+    
+
+    <!-- Header -->
+    <header id="head">
+        <h1>Dokumenty</h1>
+        <p>Wszystkie ważne informacje w jednym miejscu</p>
+    </header>
+
+    <!-- Dokumenty Section -->
+    <section class="docs-container">
+        <div class="docs-header">
+            <h1>Nasze Dokumenty</h1>
+            <p>Zapoznaj się z regulaminem, taryfikatorem i innymi dokumentami.</p>
+        </div>
+        <div class="docs-list">
+            <div class="doc-item">
+                <i class="fas fa-file-alt"></i>
+                <h2>Regulamin</h2>
+                <p>Pełny regulamin serwera BambooCraft.</p>
+                <a href="regulamin.pdf" target="_blank">Pobierz</a>
+            </div>
+            <div class="doc-item">
+                <i class="fas fa-balance-scale"></i>
+                <h2>Taryfikator</h2>
+                <p>Lista kar i zasad obowiązujących na serwerze.</p>
+                <a href="taryfikator.pdf" target="_blank">Pobierz</a>
+            </div>
+            <div class="doc-item">
+                <i class="fas fa-info-circle"></i>
+                <h2>FAQ</h2>
+                <p>Najczęściej zadawane pytania i odpowiedzi.</p>
+                <a href="faq.pdf" target="_blank">Pobierz</a>
+            </div>
+            <div class="doc-item">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Polityka Prywatności</h2>
+                <p>Informacje o przetwarzaniu danych osobowych.</p>
+                <a href="polityka_prywatnosci.pdf" target="_blank">Pobierz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="parallax">
+  <div class="footer">
+    <ul class="footer-nav">
+      <li class="footer-title">Linki</li>
+      <li><a href="info.html">Regulamin</a></li>
+      <li><a href="https://vishop.pl/shop/14322/server/13637">Itemshop</a></li>
+    </ul>
+
+    <button class="discord-btn" onclick="window.location.href='https://discord.gg/DmczjTv4nj'">
+      <i class="fab fa-discord"></i> Nasz Discord
+    </button>
+
+    <ul class="social">
+      <li class="footer-title">SocialMedia</li>
+      <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a></li>
+      <li><a href="https://discord.gg/DmczjTv4nj"><i class="fab fa-discord"></i> Discord</a></li>
+    </ul>
+
+    <p>bomboocraft.pl &copy; | Nie powiązany z Mojang/Microsoft</p>
+    <p>Stworzone przez <a href="https://discord.gg/DmczjTv4nj"><b>makkowskyy</b></a></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

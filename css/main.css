@@ -1,11 +1,12 @@
-/* Resetowanie marginesów i paddingów */
+/* =========================
+  RESET & BASE STYLES
+  ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ogólne style */
 html, body {
   font-family: 'PT Sans', sans-serif;
   scroll-behavior: smooth;
@@ -13,15 +14,18 @@ html, body {
   color: #333;
   width: 100%;
   min-height: 100vh;
+  font-size: 16px;
 }
 
-/* Wyrównanie elementów */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* =========================
+  BUTTONS
+  ========================= */
 /* Przycisk powrotu na górę */
 #myBtn {
   display: none;
@@ -40,219 +44,57 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.2s;
 }
-
 #myBtn:hover {
   background-color: #2980b9;
   transform: scale(1.1);
 }
 
-/* Nawigacja */
+/* =========================
+  NAVIGATION
+  ========================= */
 .topnav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.topnav a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 5px;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.topnav a:hover {
-  color: #fff;
-  background-color: #3498db;
-
-}
-
-.topnav .icon {
-  display: none;
-}
-
-/* Responsywność nawigacji */
-@media screen and (max-width: 800px) {
-  .topnav {
-    flex-direction: column;
-  }
-  .topnav a {
-    width: 100%;
-    padding: 15px 0;
-  }
-  .topnav .icon {
-    display: block;
-  }
-}
-
-/* Nagłówek - Parallax */
-#head {
-  width: 100%;
-  min-height: 400px;
-  background-image: url("https://preview.redd.it/p88dciey8in91.jpg?width=1080&crop=smart&auto=webp&s=a7409e109dc0e85d0af259e5b0ab1506def6a10a");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  text-align: center;
-  color: white;
-  padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-#head h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-#head h3 {
-  font-size: 1.8rem;
-  margin-top: 10px;
-}
-
-/* Sekcja Tryby */
-#gamemodes {
-  width: 100%;
-  text-align: center;
-  padding: 60px 20px;
-  background: #fff;
-}
-
-#gamemodes h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-#gamemodes .row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-#gamemodes .mode {
-  max-width: 300px;
-  text-align: center;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#gamemodes .mode:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-#gamemodes .mode img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-/* Resetowanie marginesów i paddingów */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Ogólne style */
-html, body {
-  font-family: 'PT Sans', sans-serif;
-  scroll-behavior: smooth;
-  background-color: #f4f4f4;
-  color: #333;
-  width: 100%;
-  min-height: 100vh;
-}
-
-/* Wyrównanie elementów */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Przycisk powrotu na górę */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
-  padding: 15px 20px;
-  font-size: 18px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-#myBtn:hover {
-  background-color: #2980b9;
-  transform: scale(1.1);
-}
-
-/* Nawigacja */
-.topnav {
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.topnav .max-width {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 10px 20px;
 }
-
-.topnav a.icon-container {
+.topnav .max-width {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 0 0 auto;
+  padding: 10px 20px;
+  width: 100%;
+}
+.topnav a,
+.topnav a.icon-container {
   color: #333;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: right;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-  font-size: 16px;
+  transition: color 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
-
-.topnav a.icon-container:hover {
+.topnav a.icon-container:hover,
+.topnav a:hover {
   background-color: #3498db;
-  color: white;
+  color: #fff;
 }
-
 .topnav a.icon-container img {
   height: 1.3em;
   margin-right: 8px;
 }
-
 .topnav a.icon {
   display: none;
   font-size: 28px;
@@ -260,34 +102,9 @@ body {
   user-select: none;
 }
 
-/* Responsywność */
-@media screen and (max-width: 800px) {
-  .topnav .max-width {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .topnav a.icon-container {
-    width: 100%;
-    padding: 12px 20px;
-    border-radius: 0;
-  }
-  .topnav a.icon {
-    display: block;
-    align-self: flex-end;
-    margin-right: 20px;
-    margin-bottom: 5px;
-  }
-  .topnav.responsive .max-width {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .topnav.responsive a.icon-container {
-    display: block;
-  }
-}
-
-/* Nagłówek - Parallax z nowoczesnym minimalizmem */
+/* =========================
+  HEADER / PARALLAX
+  ========================= */
 #head {
   width: 100%;
   min-height: 450px;
@@ -307,25 +124,20 @@ body {
   cursor: default;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 #head h1 {
   font-size: 4rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   text-shadow: 0 0 15px #00d2ff, 0 0 30px #00aaff;
 }
-
 #head h3 {
   font-size: 2rem;
-  margin: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   font-weight: 600;
   color: #e0f7ff;
 }
-
 #head #ipToCopy {
   background: rgba(0, 210, 255, 0.15);
   padding: 6px 14px;
@@ -333,15 +145,13 @@ body {
   font-weight: 700;
   user-select: text;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s, box-shadow 0.3s;
   display: inline-block;
 }
-
 #head #ipToCopy:hover {
   background-color: rgba(0, 210, 255, 0.35);
   box-shadow: 0 0 15px #00d2ff;
 }
-
 #head .click-info {
   font-size: 1rem;
   font-style: italic;
@@ -350,38 +160,26 @@ body {
   user-select: none;
 }
 
-/* Responsywność */
-@media (max-width: 600px) {
-  #head h1 {
-    font-size: 2.8rem;
-  }
-  #head h3 {
-    font-size: 1.4rem;
-  }
-}
-
-
-/* Sekcja Tryby */
+/* =========================
+  GAMEMODES SECTION
+  ========================= */
 #gamemodes {
   width: 100%;
   text-align: center;
   padding: 60px 20px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #111;
 }
-
 #gamemodes h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #222;
 }
-
 #gamemodes .subtitle {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 30px;
 }
-
 #gamemodes hr {
   width: 60px;
   height: 3px;
@@ -390,7 +188,6 @@ body {
   margin: 0 auto 40px auto;
   border-radius: 2px;
 }
-
 .gamemodes-container {
   display: flex;
   justify-content: center;
@@ -399,22 +196,19 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .mode {
   background-color: #f9f9f9;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   padding: 25px;
   max-width: 320px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
-
 .mode:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
-
 .mode img {
   width: 100%;
   height: auto;
@@ -422,55 +216,50 @@ body {
   margin-bottom: 15px;
   object-fit: cover;
 }
-
 .mode h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
   color: #222;
 }
-
 .mode p {
   font-size: 0.95rem;
   color: #666;
 }
 
-
+/* =========================
+  STAFF SECTION
+  ========================= */
 #staff {
   padding: 60px 20px;
   background-color: #f9f9f9;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
-
 #staff h1 {
   font-size: 2.5rem;
   color: #111;
   margin-bottom: 40px;
   font-weight: 600;
 }
-
 .stafflist {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-
 .staffblock {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 20px;
   width: 200px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
-
 .staffblock:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transform: translateY(-5px);
 }
-
 .staffblock img {
   width: 80px;
   height: 80px;
@@ -479,29 +268,21 @@ body {
   margin-bottom: 15px;
   border: 2px solid #ddd;
 }
-
 .staffblock h2 {
   margin: 0;
   font-size: 1.2rem;
   color: #222;
   font-weight: 500;
 }
-
 .staffblock p {
   margin-top: 5px;
   font-size: 0.95rem;
   color: #666;
 }
 
-@media (max-width: 768px) {
-  .stafflist {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-/* Stopka */
+/* =========================
+  FOOTER
+  ========================= */
 footer {
   width: 100%;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -510,20 +291,8 @@ footer {
   padding: 40px 20px;
   margin-top: auto;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeInUp 0.6s ease-in-out;
+  animation: fadeInUp 0.6s;
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .footer-nav, .social {
   display: flex;
   justify-content: center;
@@ -533,26 +302,22 @@ footer {
   margin: 20px 0;
   flex-wrap: wrap;
 }
-
 .footer-title {
   font-weight: bold;
   color: #3498db;
   margin-right: 15px;
 }
-
 .footer-nav a, .social a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease, transform 0.2s;
+  transition: color 0.3s, transform 0.2s;
 }
-
 .footer-nav a:hover, .social a:hover {
   color: #3498db;
   text-decoration: underline;
   transform: scale(1.05);
 }
-
 .discord-btn {
   background: rgba(88, 101, 242, 0.15);
   border: 1px solid rgba(88, 101, 242, 0.4);
@@ -563,134 +328,25 @@ footer {
   margin: 15px 0;
   cursor: pointer;
   border-radius: 8px;
-  transition: background 0.3s ease, transform 0.2s;
+  transition: background 0.3s, transform 0.2s;
 }
-
 .discord-btn:hover {
   background: rgba(88, 101, 242, 0.25);
   transform: scale(1.05);
 }
-
 footer p {
   margin-top: 10px;
   font-size: 0.9rem;
   opacity: 0.8;
 }
-
 footer p a {
   color: #3498db;
   text-decoration: none;
 }
-
 footer p a:hover {
   text-decoration: underline;
 }
-
 .power {
   color: #3498db;
   font-weight: bold;
-}
-
-@media (max-width: 700px) {
-  .footer-nav, .social {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .discord-btn {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-/* Responsywność dla bardzo małych ekranów */
-@media (max-width: 500px) {
-  html, body {
-    font-size: 15px;
-    padding: 0;
-  }
-
-  #head {
-    min-height: 280px;
-    padding: 60px 8px;
-  }
-  #head h1 {
-    font-size: 1.7rem;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-  }
-  #head h3 {
-    font-size: 1.1rem;
-    margin-bottom: 4px;
-  }
-  #head #ipToCopy {
-    font-size: 0.95rem;
-    padding: 4px 8px;
-  }
-
-  #gamemodes {
-    padding: 30px 5px;
-  }
-  .gamemodes-container, #gamemodes .row {
-    flex-direction: column;
-    gap: 15px;
-    padding: 0;
-  }
-  .mode, #gamemodes .mode {
-    max-width: 100%;
-    padding: 12px;
-  }
-
-  #staff {
-    padding: 30px 5px;
-  }
-  .stafflist {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .staffblock {
-    width: 100%;
-    padding: 12px;
-  }
-
-  footer {
-    padding: 20px 5px;
-  }
-  .footer-nav, .social {
-    flex-direction: column;
-    gap: 8px;
-    margin: 10px 0;
-  }
-  .discord-btn {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 0.95rem;
-  }
-}
-
-/* Poprawka nawigacji na telefonach */
-@media (max-width: 800px) {
-  .topnav {
-    flex-direction: row; /* Ustawienie elementów w kolumnie */
-    align-items: center; /* Wyśrodkowanie elementów */
-    padding: 8px 5px;
-  }
-  .topnav .max-width {
-    flex-direction: row; /* Ustawienie elementów w kolumnie */
-    align-items: center; /* Wyśrodkowanie elementów */
-    padding: 8px 5px;
-    gap: 10px; /* Większy odstęp między elementami */
-  }
-  .topnav a.icon-container {
-    width: auto; /* Dopasowanie szerokości do zawartości */
-    padding: 10px 0;
-    font-size: 1rem;
-    justify-content: center; /* Wyśrodkowanie tekstu i ikon */
-  }
-  .topnav a.icon {
-    display: block;
-    align-self: center; /* Wyśrodkowanie ikony */
-    margin: 5px 0;
-  }
 }
