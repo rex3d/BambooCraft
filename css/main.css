@@ -350,3 +350,56 @@ footer p a:hover {
   color: #3498db;
   font-weight: bold;
 }
+
+/* Poprawka dla ikon i tekstu w nawigacji */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Odstęp między ikoną a tekstem */
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.icon-container i {
+  font-size: 20px; /* Rozmiar ikon */
+}
+
+.icon-container span {
+  white-space: nowrap; /* Zapobiega łamaniu tekstu */
+}
+
+.icon-container:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #3498db;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Odstęp między ikoną a tekstem */
+}
+
+.home-icon {
+  display: inline-block;
+  width: 50px; /* Rozmiar kółka */
+  height: 50px;
+  border-radius: 50%; /* Wycinanie w kształt kółka */
+  overflow: hidden; /* Ukrycie nadmiaru obrazu */
+  margin-right: 15px; /* Odstęp od reszty elementów */
+  text-decoration: none;
+}
+
+.home-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Dopasowanie obrazu do kółka */
+}
